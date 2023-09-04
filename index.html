@@ -18,13 +18,14 @@
         }
 
         #container {
-            background-color: #63d0ff; /* Fundo do container interno */
+            background-color: #8bbdff; /* Fundo do container interno */
             border-radius: 10px; /* Bordas arredondadas do container interno */
-            padding: 20px;
+            padding: 10px;
             text-align: center;
-            color: #023d78; /* Cor do texto */
+            color: #002b53; /* Cor do texto */
             width: 250px; /* Largura do container interno */
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
         }
@@ -34,7 +35,7 @@
         }
 
         #botoes {
-            margin-top: 20px;
+            margin-top: 10px;
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -42,16 +43,24 @@
 
         button {
             font-size: 1.5rem;
-            padding: 10px 20px;
+            padding: 10px;
             width: 45px; /* Largura dos botões */
+            background-color: #002b53; /* Cor do fundo dos botões */
+            color: #ffffff; /* Cor do texto dos botões */
+            border-radius: 50%; /* Transforma os botões em círculos */
+            border: none; /* Remove a borda dos botões */
+            cursor: pointer; /* Adiciona um cursor de mão nos botões */
         }
     </style>
 </head>
 <body>
+    <h1 style="color: #002b53;">Projetos</h1>
     <div id="container">
-        <button onclick="diminuir()">-</button>
         <p id="contador">0</p>
-        <button onclick="aumentar()">+</button>
+        <div id="botoes">
+            <button onclick="diminuir()">-</button>
+            <button onclick="aumentar()">+</button>
+        </div>
     </div>
 
     <script>
