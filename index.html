@@ -25,12 +25,19 @@
             color: #002b53; /* Cor do texto */
             width: 200px; /* Largura do container interno */
             display: flex;
+            flex-direction: column; /* Alinha elementos verticalmente */
             align-items: center;
+        }
+
+        #titulo {
+            font-size: 1.2rem;
+            text-transform: uppercase; /* Transforma o texto em maiúsculo */
+            margin-bottom: 10px; /* Espaçamento entre o título e o valor */
         }
 
         #contador {
             font-size: 4rem;
-            margin: 0 20px; /* Espaçamento entre o valor e os botões */
+            margin: 10px 0; /* Espaçamento entre o valor e os botões */
         }
 
         #botoes {
@@ -51,10 +58,13 @@
     </style>
 </head>
 <body>
+    <h2 id="titulo">Projetos</h2>
     <div id="container">
-        <button onclick="diminuir()">-</button>
         <p id="contador">0</p>
-        <button onclick="aumentar()">+</button>
+        <div id="botoes">
+            <button onclick="diminuir()">-</button>
+            <button onclick="aumentar()">+</button>
+        </div>
     </div>
 
     <script>
