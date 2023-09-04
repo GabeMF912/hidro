@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contador</title>
 </head>
 <body>
@@ -10,20 +12,21 @@
     <button onclick="diminuir()">-</button>
 
     <script>
-        // Função para aumentar o valor
+        var valor = 0; // Inicializa o valor do contador em 0
+
         function aumentar() {
-            var contador = document.getElementById("contador");
-            var valor = parseInt(contador.innerHTML);
-            valor++;
-            contador.innerHTML = valor;
+            valor++; // Incrementa o valor em 1
+            atualizarContador(); // Atualiza o valor exibido na página
         }
 
-        // Função para diminuir o valor
         function diminuir() {
-            var contador = document.getElementById("contador");
-            var valor = parseInt(contador.innerHTML);
-            valor--;
-            contador.innerHTML = valor;
+            valor--; // Decrementa o valor em 1
+            atualizarContador(); // Atualiza o valor exibido na página
+        }
+
+        function atualizarContador() {
+            // Atualiza o elemento de texto com o novo valor do contador
+            document.getElementById("contador").textContent = valor;
         }
     </script>
 </body>
