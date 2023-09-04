@@ -14,14 +14,19 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #eeeeee; /* Cor de fundo da página */
+            background-color: transparent; /* Fundo transparente da página */
         }
 
         #container {
-            background-color: #ffffff; /* Cor de fundo do container */
-            border-radius: 10px; /* Bordas arredondadas do container */
+            background-color: #63d0ff; /* Fundo do container interno */
+            border-radius: 10px; /* Bordas arredondadas do container interno */
             padding: 20px;
             text-align: center;
+            color: #023d78; /* Cor do texto */
+            width: 250px; /* Largura do container interno */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         #contador {
@@ -30,23 +35,23 @@
 
         #botoes {
             margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
         }
 
         button {
             font-size: 1.5rem;
             padding: 10px 20px;
-            margin: 0 10px;
+            width: 45px; /* Largura dos botões */
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <h1>Projetos</h1>
+        <button onclick="diminuir()">-</button>
         <p id="contador">0</p>
-        <div id="botoes">
-            <button onclick="aumentar()">+</button>
-            <button onclick="diminuir()">-</button>
-        </div>
+        <button onclick="aumentar()">+</button>
     </div>
 
     <script>
