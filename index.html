@@ -6,7 +6,7 @@
     <title>Projetos</title>
     <style>
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,33 +18,24 @@
         }
 
         #container {
-            background-color: #8bbdff; /* Fundo do container interno */
+            background-color: #63d0ff; /* Fundo do container interno */
             border-radius: 10px; /* Bordas arredondadas do container interno */
             padding: 20px;
             text-align: center;
             color: #002b53; /* Cor do texto */
             width: 200px; /* Largura do container interno */
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: center;
-        }
-
-        #titulo {
-            font-size: 1.2rem;
-            text-transform: uppercase; /* Transforma o texto em maiúsculo */
-            margin-bottom: 10px; /* Espaçamento entre o título e o valor */
         }
 
         #contador {
             font-size: 4rem;
-            margin-bottom: 10px; /* Espaçamento entre o valor e os botões */
+            margin: 0 20px; /* Espaçamento entre o valor e os botões */
         }
 
         #botoes {
             display: flex;
-            justify-content: space-around; /* Alinha os botões com o valor */
-            width: 100%;
+            align-items: center;
         }
 
         button {
@@ -53,7 +44,7 @@
             width: 45px; /* Largura dos botões */
             background-color: #002b53; /* Cor do fundo dos botões */
             color: #ffffff; /* Cor do texto dos botões */
-            border-radius: 50%; /* Transforma os botões em círculos */
+            border-radius: 10px; /* Bordas arredondadas dos botões */
             border: none; /* Remove a borda dos botões */
             cursor: pointer; /* Adiciona um cursor de mão nos botões */
         }
@@ -61,12 +52,9 @@
 </head>
 <body>
     <div id="container">
-        <p id="titulo">PROJETOS</p>
+        <button onclick="diminuir()">-</button>
         <p id="contador">0</p>
-        <div id="botoes">
-            <button onclick="diminuir()">-</button>
-            <button onclick="aumentar()">+</button>
-        </div>
+        <button onclick="aumentar()">+</button>
     </div>
 
     <script>
