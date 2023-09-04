@@ -20,14 +20,14 @@
         #container {
             background-color: #8bbdff; /* Fundo do container interno */
             border-radius: 10px; /* Bordas arredondadas do container interno */
-            border: 3px solid #002b53; /* Adiciona uma borda com a cor #002b53 */
+            border: 2px solid #002b53; /* Adiciona uma borda com a cor #002b53 */
             padding: 20px;
             text-align: center;
             color: #002b53; /* Cor do texto */
             width: 300px; /* Largura do container interno */
             height: 150px;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
             justify-content: space-between; /* Distribui o espaço igualmente entre os elementos */
         }
@@ -53,6 +53,7 @@
 </head>
 <body>
     <div id="container">
+        <h1 id="titulo">PROJETOS</h1>
         <button onclick="diminuir()">-</button>
         <p id="contador">0</p>
         <button onclick="aumentar()">+</button>
