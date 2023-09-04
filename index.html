@@ -23,49 +23,37 @@
             padding: 20px;
             text-align: center;
             color: #002b53; /* Cor do texto */
-            width: 200px; /* Largura do container interno */
+            width: 400px; /* Largura do container interno */
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
+            justify-content: space-between; /* Distribui o espaço igualmente entre os elementos */
         }
 
         #titulo {
             font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        #botoes {
-            display: flex;
-            align-items: center;
-            margin-top: 10px; /* Adiciona espaço entre o título e os botões */
         }
 
         button {
-            font-size: 2rem; /* Tamanho dos botões aumentado */
-            padding: 12px; /* Espaçamento interno dos botões aumentado */
-            width: 60px; /* Largura dos botões aumentada */
-            height: 60px; /* Altura dos botões aumentada */
+            font-size: 1.5rem;
+            padding: 12px 20px; /* Espaçamento interno dos botões (vertical, horizontal) */
             background-color: #002b53; /* Cor do fundo dos botões */
             color: #ffffff; /* Cor do texto dos botões */
-            border-radius: 50%; /* Transforma os botões em círculos */
             border: none; /* Remove a borda dos botões */
             cursor: pointer; /* Adiciona um cursor de mão nos botões */
-            margin: 5px; /* Adiciona espaço entre os botões */
+            border-radius: 10px; /* Bordas arredondadas dos botões */
         }
 
         #contador {
-            font-size: 4rem; /* Aumenta o tamanho da fonte do número */
+            font-size: 2rem; /* Aumenta o tamanho da fonte do número */
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <h1 id="titulo">PROJETOS</h1>
-        <div id="botoes">
-            <button onclick="diminuir()">-</button>
-            <p id="contador">0</p>
-            <button onclick="aumentar()">+</button>
-        </div>
+        <button onclick="diminuir()">-</button>
+        <p id="contador">0</p>
+        <button onclick="aumentar()">+</button>
     </div>
 
     <script>
