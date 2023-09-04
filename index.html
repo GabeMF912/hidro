@@ -25,19 +25,13 @@
             color: #002b53; /* Cor do texto */
             width: 200px; /* Largura do container interno */
             display: flex;
-            flex-direction: column; /* Alinha elementos verticalmente */
+            flex-direction: column;
             align-items: center;
         }
 
         #titulo {
-            font-size: 1.2rem;
-            text-transform: uppercase; /* Transforma o texto em maiúsculo */
-            margin-bottom: 10px; /* Espaçamento entre o título e o valor */
-        }
-
-        #contador {
-            font-size: 4rem;
-            margin: 10px 0; /* Espaçamento entre o valor e os botões */
+            font-size: 1.5rem;
+            margin-bottom: 10px;
         }
 
         #botoes {
@@ -49,20 +43,21 @@
             font-size: 1.5rem;
             padding: 10px;
             width: 45px; /* Largura dos botões */
+            height: 45px; /* Altura dos botões */
             background-color: #002b53; /* Cor do fundo dos botões */
             color: #ffffff; /* Cor do texto dos botões */
-            border-radius: 10px; /* Bordas arredondadas dos botões */
+            border-radius: 50%; /* Transforma os botões em círculos */
             border: none; /* Remove a borda dos botões */
             cursor: pointer; /* Adiciona um cursor de mão nos botões */
         }
     </style>
 </head>
 <body>
-    <h2 id="titulo">Projetos</h2>
     <div id="container">
-        <p id="contador">0</p>
+        <h1 id="titulo">PROJETOS</h1>
         <div id="botoes">
             <button onclick="diminuir()">-</button>
+            <p id="contador">0</p>
             <button onclick="aumentar()">+</button>
         </div>
     </div>
