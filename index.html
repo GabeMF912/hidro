@@ -14,11 +14,18 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            background-color: #eeeeee; /* Cor de fundo da página */
+        }
+
+        #container {
+            background-color: #ffffff; /* Cor de fundo do container */
+            border-radius: 10px; /* Bordas arredondadas do container */
+            padding: 20px;
+            text-align: center;
         }
 
         #contador {
             font-size: 4rem;
-            text-align: center;
         }
 
         #botoes {
@@ -33,11 +40,13 @@
     </style>
 </head>
 <body>
-    <h1>Projetos</h1>
-    <p id="contador">0</p>
-    <div id="botoes">
-        <button onclick="aumentar()">+</button>
-        <button onclick="diminuir()">-</button>
+    <div id="container">
+        <h1>Projetos</h1>
+        <p id="contador">0</p>
+        <div id="botoes">
+            <button onclick="aumentar()">+</button>
+            <button onclick="diminuir()">-</button>
+        </div>
     </div>
 
     <script>
